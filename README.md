@@ -6,6 +6,8 @@
 #### 2. Utilize os comandos abaixo:
 #### 3. 'docker build -t atividade-api .'
 #### 4. 'docker run -p 8000:8000 atividade-api'
+#### 5. Caso queira acessar a administração do sistema, utilize:
+#### 6. Usuário: impacta | Senha: 123
 
 ## Tecnologias
 #### 1. Python
