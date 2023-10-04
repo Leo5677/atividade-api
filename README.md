@@ -6,8 +6,8 @@
 #### 2. Utilize os comandos abaixo:
 #### 3. 'docker build -t atividade-api .'
 #### 4. 'docker run -p 8000:8000 atividade-api'
-#### 5. Caso queira acessar a administração do sistema, utilize:
-#### 6. Usuário: impacta | Senha: 123
+#### 5. Caso queira acessar a administração do sistema geral http://127.0.0.1:8000/admin/, utilize: Usuário: impacta | Senha: 123
+#### 6. Caso queira acessar a administração do sistema de API do Django Rest: http://127.0.0.1:8000/api/v1/os/
 
 ## Tecnologias
 #### 1. Python
