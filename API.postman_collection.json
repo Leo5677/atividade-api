@@ -1,0 +1,214 @@
+{
+	"info": {
+		"_postman_id": "aaaa1d57-cdef-4e42-bb66-fc3cebf90b5f",
+		"name": "Atividade API - Leonardo Valensoela",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26722460"
+	},
+	"item": [
+		{
+			"name": "API/V1/OS/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"descricao\": \"Descrição Teste - Ordem Serviço Quatro\"\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/os/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"os",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API/V1/OS/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/os/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"os",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API/V1/OS/<STR:NUMERO>/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/os/ce0ebd3f-a980-4be2-818d-755a93a884bb/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"os",
+						"ce0ebd3f-a980-4be2-818d-755a93a884bb",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API/V1/OS/<STR:NUMERO>/EQUIPAMENTO/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"indice\": 1,\r\n    \"descricao\": \"Descrição Equipamento Teste\",\r\n    \"problema\": \"Problema Teste Enviado API\",\r\n    \"numero\": \"0cd6208b-7ee5-4ad6-8329-691445df2888\"\t\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/os/0cd6208b-7ee5-4ad6-8329-691445df2888/equipamento/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"os",
+						"0cd6208b-7ee5-4ad6-8329-691445df2888",
+						"equipamento",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "V1/OS/<STR:NUMERO>/EQUIPAMENTO/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/os/0cd6208b-7ee5-4ad6-8329-691445df2888/equipamento/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"os",
+						"0cd6208b-7ee5-4ad6-8329-691445df2888",
+						"equipamento",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "V1/OS/<STR:NUMERO>/EQUIPAMENTO/<INT:INDICE>/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/os/ce0ebd3f-a980-4be2-818d-755a93a884bb/equipamento/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"os",
+						"ce0ebd3f-a980-4be2-818d-755a93a884bb",
+						"equipamento",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "V1/OS/EQUIPAMENTO/<STR:DESCRICAO>/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/v1/os/equipamento/Descrição Equipamento Teste",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"os",
+						"equipamento",
+						"Descrição Equipamento Teste"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
